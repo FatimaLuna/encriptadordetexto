@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <img src="lunita.png" width="80px" height="80px">
+            </div>
+        </header>
+        <div class="content">
+			<textarea class="borderless-textarea" type="text" id="inputText" rows="10" cols="28" placeholder="Ingresa el texto aquí..."></textarea>
+            
+            <div class="buttons">
+                <button type="button" onclick="encryptText()">Encriptar</button>
+                <button type="button" onclick="decryptText()">Desencriptar</button>
+            </div>
+            
+            <div class="output-container">
+                <textarea class="borderless-textarea" type="text" id="outputText" rows="10" cols="28" placeholder="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar." readonly></textarea>
+                <img src="fa.png" alt="Imagen" class="image-overlay" id="backgroundImage">
+            </div>
+            
+            <div class="buttons">  
+                <button type="button" onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Desarrollado por Luna</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
